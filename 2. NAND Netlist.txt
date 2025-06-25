@@ -1,0 +1,13 @@
+* C:\Users\91798\Desktop\Summer\LTSpice Projects\1 Byte Mem LTSpice\NAND gate.asc
+Q1 nand nand1 N001 0 2N2222
+Q2 N001 nand2 0 0 2N2222
+R1 +Vcc nand 1k
+V1 nand2 0 PWL(0 0 2 0 2.005 3 4 3 4.005 0 6 0 6.005 3 8 3)
+V2 nand1 0 PWL(0 0 4 0 4.005 4 8 4)
+V3 +Vcc 0 5
+.model NPN NPN
+.model PNP PNP
+.lib C:\Users\91798\AppData\Local\LTspice\lib\cmp\standard.bjt
+.tran 10
+.backanno
+.end

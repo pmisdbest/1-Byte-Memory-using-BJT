@@ -1,0 +1,15 @@
+* C:\Users\91798\Desktop\Summer\LTSpice Projects\1 Byte Mem LTSpice\NOR gate.asc
+V1 +Vcc 0 5
+R1 +Vcc nor 1k
+R2 +Vcc nor 1k
+Q1 nor nor1 0 0 2N2222
+Q2 0 nor2 nor 0 2N2222
+V2 nor1 0 PWL(0 0 2 0 4 0 4.005 4)
+V3 nor2 0 PWL(0 0 2 0 2.005 4 4 4 4.005 0 6 0 6.005 4)
+.model NPN NPN
+.model PNP PNP
+.lib C:\Users\91798\AppData\Local\LTspice\lib\cmp\standard.bjt
+.tran 8
+* NOR Gate
+.backanno
+.end

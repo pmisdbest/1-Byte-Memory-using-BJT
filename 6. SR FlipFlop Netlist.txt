@@ -1,0 +1,28 @@
+* C:\Users\91798\Desktop\Summer\LTSpice Projects\1 Byte Mem LTSpice\SR FlipFlop.asc
+Q1 Q N001 N003 0 2N2222
+Q2 N003 So 0 0 2N2222
+Q3 Q_Dash N002 N004 0 2N2222
+Q4 N004 Ro 0 0 2N2222
+V1 +Vcc 0 5
+R1 +Vcc Q 100
+R2 +Vcc Q_Dash 100
+R3 Q_Dash N001 5k
+R4 N002 Q 5k
+Q5 So N005 N007 0 2N2222
+Q6 N007 CLK 0 0 2N2222
+Q7 Ro N006 N008 0 2N2222
+Q8 N008 CLK 0 0 2N2222
+V2 CLK 0 PULSE(0 3 0 0.005 0.005 2 4 10)
+R5 +Vcc So 100
+R7 +Vcc Ro 100
+R6 N005 S 1k
+R8 R N006 1k
+V3 S 0 PWL(0 4 2 4 2.005 0 6 0 6.005 4 8 4 8.005 0 10 0)
+V4 R 0 PWL(0 4 4 4 4.005 0 6 0 6.005 0 10 0)
+.model NPN NPN
+.model PNP PNP
+.lib C:\Users\91798\AppData\Local\LTspice\lib\cmp\standard.bjt
+* SR FlipFlop
+.tran 10
+.backanno
+.end

@@ -1,0 +1,19 @@
+* C:\Users\91798\Desktop\Summer\LTSpice Projects\1 Byte Mem LTSpice\SR Latch.asc
+Q1 Q N001 N003 0 2N2222
+Q2 N003 S 0 0 2N2222
+Q3 Q_Dash N002 N004 0 2N2222
+Q4 N004 R 0 0 2N2222
+V1 +Vcc 0 5
+V2 S 0 PWL(0 0 4 0 4.005 4 10 4)
+V3 R 0 PWL(0 0 2 0 2.005 3 6 3 6.005 0 8 0 8.005 3 10 3)
+R1 +Vcc Q 100
+R2 +Vcc Q_Dash 100
+R3 Q_Dash N001 5k
+R4 N002 Q 5k
+.model NPN NPN
+.model PNP PNP
+.lib C:\Users\91798\AppData\Local\LTspice\lib\cmp\standard.bjt
+.tran 10
+* SR Latch
+.backanno
+.end

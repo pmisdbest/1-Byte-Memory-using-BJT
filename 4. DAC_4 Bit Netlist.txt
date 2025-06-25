@@ -1,0 +1,20 @@
+* C:\Users\91798\Desktop\Summer\LTSpice Projects\1 Byte Mem LTSpice\DAC_4bit.asc
+V1 +Vcc 0 15
+V2 0 -Vcc 15
+V3 D3 0 5
+V4 D2 0 5
+V5 D1 0 5
+V6 D0 0 5
+XU1 N001 OUT +Vcc -Vcc OUT LT1001
+R1 N001 D3 20k
+R2 N002 D2 20k
+R3 N003 D1 20k
+R4 N004 D0 20k
+R5 N001 N002 10k
+R6 N002 N003 10k
+R7 N003 N004 10k
+R8 N004 0 10k
+.tran 10
+.lib LTC.lib
+.backanno
+.end

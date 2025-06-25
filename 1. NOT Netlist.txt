@@ -1,0 +1,12 @@
+* C:\Users\91798\Desktop\Summer\LTSpice Projects\1 Byte Mem LTSpice\NOT gate.asc
+V1 +Vcc 0 5
+Q1 not not1 0 0 2N2222
+R1 +Vcc not 1k
+V2 not1 0 PWL(0 0 2 0 2.005 4 4 4 4.005 0)
+.model NPN NPN
+.model PNP PNP
+.lib C:\Users\91798\AppData\Local\LTspice\lib\cmp\standard.bjt
+.tran 8
+* NOT Gate
+.backanno
+.end
