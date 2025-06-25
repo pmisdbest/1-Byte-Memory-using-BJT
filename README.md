@@ -1,6 +1,6 @@
 # 1-Byte-Memory-using-BJT
 
-I designed and built a 1-byte memory module using transistors - 2N2222 BJTs, on LTSpice.
+I have designed and built a 1-byte memory module using transistors - 2N2222 BJTs, on LTSpice.
 
 Basic Logic Gates:
 I began by constructing fundamental logic gates—NAND, NOR, and NOT—using transistor-based circuits.
