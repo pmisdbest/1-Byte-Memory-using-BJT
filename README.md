@@ -182,12 +182,6 @@ Pratham Maan
 - GitHub: @pmisdbest
 - Email: prathammaan7@gmail.com
 
-## Acknowledgments
-
-- **LTSpice Community**: For simulation tools and support
-- **Digital Design References**: Textbooks and online resources
-- **BJT Transistor Models**: Accurate device characterization
-
 ---
 
 *This project demonstrates the complete design flow from basic transistor circuits to functional memory systems, providing valuable insight into the hardware foundations of digital computing.*
