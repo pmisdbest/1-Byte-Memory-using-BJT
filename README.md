@@ -111,34 +111,6 @@ Digital-to-Analog Converter for output visualization:
 - **Output Range**: 0V to 5V analog output
 - **Applications**: Waveform generation and display
 
-## File Structure
-
-├── README.md
-├── circuit-schematics/
-│ ├── basic-gates/
-│ │ ├── not-gate-bjt.asc
-│ │ ├── nand-gate-bjt.asc
-│ │ └── nor-gate-bjt.asc
-│ ├── storage-elements/
-│ │ ├── sr-latch.asc
-│ │ ├── sr-flipflop.asc
-│ │ └── d-flipflop.asc
-│ ├── memory-system/
-│ │ ├── 1byte-memory.asc
-│ │ └── 4bit-dac.asc
-├── simulation-results/
-│ ├── waveforms/
-│ │ ├── sr-latch-timing.png
-│ │ ├── sr-flipflop-timing.png
-│ │ └── memory-array-timing.png
-│ ├── screenshots/
-│ │ ├── complete-memory-circuit.png
-│ │ └── dac-output-analysis.png
-├── documentation/
-│ ├── design-methodology.md
-│ ├── component-specifications.md
-│ └── testing-procedures.md
-
 ## Design Methodology
 
 ### **Bottom-Up Approach**
